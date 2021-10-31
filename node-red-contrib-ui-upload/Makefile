@@ -6,7 +6,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NPM_NAME:=node-red-contrib-ui-upload
 PKG_NAME:=$(PKG_NPM_NAME)
-PKG_VERSION:=3.1.0
+PKG_VERSION:=0.0.4
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NPM_NAME)-$(PKG_VERSION).tgz
@@ -33,7 +33,7 @@ define Package/node-red-contrib-ui-upload
 endef
 
 define Package/node-red-contrib-ui-upload/description
- This module provides a set of nodes in Node-RED to quickly create a live data dashboard.a
+ This module provides a way to upload files to system using dashboard ui
 endef
 
 TAR_OPTIONS+= --strip-components 1
